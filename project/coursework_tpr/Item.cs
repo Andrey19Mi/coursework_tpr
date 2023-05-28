@@ -31,15 +31,7 @@ namespace coursework_tpr
             cost = s_cost - p_cost;
 
         }
-        public Item(Item item, int count)
-        {
-            name = item.Name;
-            size = item.Size;
-            cost = item.Cost;
-            p_cost = item.PCost;
-            s_cost = item.SCost;
-            this.count = count;
-        }
+
         public string[] Print()
         {
             return new string[] { name, size.ToString(), cost.ToString(),

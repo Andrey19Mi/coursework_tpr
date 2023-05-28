@@ -59,33 +59,16 @@ namespace coursework_tpr
             this.items = bpm[bpm.GetLength(0)-1, bpm.GetLength(1)-1].Items;
             best_cost = bpm[bpm.GetLength(0) - 1, bpm.GetLength(1) - 1].Cost;
             Calc();
-            
-
-
         }
-        //private void GroupBy()
-        //{
-        //    IEnumerable<Item> sort_items = 
-        //        from item in items
-        //        orderby item.Name
-        //        select item;
-        //    List<Item> temp = new List<Item>();
-        //    for (int i = 1; i < items.Length;++i)
-        //    {
-        //        if (items[])
-        //    }
-        //}
         
         private void Calc()
         {
-            int temp = max_size;
             foreach (Item item in items)
             {
                 p_cost += item.PCost;
                 s_cost += item.SCost;
-                temp -= item.Size;
+                fullness += item.Size;
             }
-            fullness = temp;
 
         }
 

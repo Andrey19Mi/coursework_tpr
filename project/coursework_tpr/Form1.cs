@@ -39,12 +39,16 @@ namespace coursework_tpr
             foreach (Item item in backpack.Items)
             {
                 listView1.Items.Add(new ListViewItem(item.Print()));
-                
+
             }
+            label6.Text = backpack.Fullness.ToString();
+            label7.Text = backpack.SCost.ToString();
+            label8.Text = backpack.PCost.ToString();
+            label9.Text = backpack.Cost.ToString();
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }

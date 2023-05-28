@@ -1,4 +1,0 @@
-guitar 1 1500 0 1
-notebook 3 2000 0 1
-mag 4 3000 0 1
-iphone 1 2000 0 1
